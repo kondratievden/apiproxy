@@ -42,7 +42,7 @@ class ApiProxyController extends Controller
     {
         $activationId = $request->query('activation');
 
-        $response = Http::withToken($this->apiToken)->get("{$this->apiBaseUrl}", [
+        $response = Http::get("{$this->apiBaseUrl}", [
             'action' => 'cancelNumber',
             'activation' => $activationId,
             "token" => "{$this->apiToken}"
@@ -55,7 +55,7 @@ class ApiProxyController extends Controller
     {
         $activationId = $request->query('activation');
 
-        $response = Http::withToken($this->apiToken)->get("{$this->apiBaseUrl}", [
+        $response = Http::get("{$this->apiBaseUrl}", [
             'action' => 'getStatus',
             'activation' => $activationId,
             "token" => "{$this->apiToken}"
