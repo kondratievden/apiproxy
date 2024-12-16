@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Http;
 
 class ApiProxyController extends Controller
 {
-    protected $apiBaseUrl = 'https://postback-sms.com/api/'; 
-    protected $apiToken = "5994c91001f57eea808aff11738d752a"; 
+    protected $apiBaseUrl = 'https://example.com/api/'; //ввести нужный URL для запросов
+    protected $apiToken = "token"; //указать токен
     public function getNumber(Request $request)
     {
         $country = $request->query('country');
