@@ -1,5 +1,5 @@
 1) В проекте apiproxy создан новый  контроллер ApiProxyController.
-2) создан route для методов getNumber, getSms, cancelNumber, getStatus  в routes/api.php
+2) добавлены маршруты в routes/api.php
 3) Например в адрсеной строке браузера после запуска сервера laravel можно вести запрос
     GET запрос по следующим параметрам:
    http://localhost:8000/api/get-number?country=se&service=wa
