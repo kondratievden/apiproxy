@@ -3,7 +3,7 @@
 3) Например в адрсеной строке браузера после запуска сервера laravel можно вести запрос
     GET запрос по следующим параметрам:
    http://localhost:8000/api/get-number?country=se&service=wa
-   указать region и service;
+   указать country и service;
    http://localhost:8000/api/get-sms?activation=вести activtion id
    указать activation 
    http://localhost:8000/api/get-status?activation=вести activtion id
